@@ -18,6 +18,7 @@ article th, article td {
     text-indent: 5px;
     height: 25px;
     vertical-align: middle;
+    text-align: left;
 }
 
 
