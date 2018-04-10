@@ -52,10 +52,27 @@
 
 <main>
     <article>
+        <section id="injury-tracker">
+            <h2><a target="_top" href="">Yankees injury tracker</a></h2>
+            <div id="table-wrapper">
+                <table id="injury">
+                    <thead>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Injury</th>
+                        <th>DL stint</th>
+                        <th>DL start</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </article>
 </main>
 
 <!-- CONTENT-END -->
-<script onload="" src="js/app.js"></script>
+<script onload="window.setTimeout(injuries.init, 100);" src="js/app.js"></script>
+
 </body>
 </html>
