@@ -1,0 +1,68 @@
+article table {
+    margin: auto;
+    width: 100%;
+}
+
+article thead {
+    background-color: #002D72;
+    text-transform: uppercase;
+    border: 1px solid #808080;
+    font-family: 'Open Sans', sans-serif;
+    font-display: optional;
+    padding: 7px 0;
+    vertical-align: middle;
+    color: white;
+}
+
+article th, article td {
+    text-indent: 5px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+
+article tr:nth-child(even) {
+    background-color: #dedede;
+}
+
+tr.inactive {
+    background-color: #eee;
+}
+tr.inactive td {
+    color: #aaa;
+}
+
+/*--------- HANDHELD ---------*/
+
+@media only screen and (min-width: 250px) and (max-width: 727px) {
+
+    table#injury {
+        width: 100%;
+    }
+
+    #injury-tracker th:nth-child(2), th:nth-child(3) {
+        display: none;
+    }
+
+    #injury-tracker td:nth-child(2), td:nth-child(3) {
+        display: none;
+    }
+}
+
+body {
+    font: 12px/15px "Open Sans",sans-serif;
+    color: #333;
+}
+article table {
+    width: 100%;
+}
+#injury-tracker {
+    margin: 0;
+}
+#injury-tracker h2 {
+    margin-top: 0;
+}
+#injury-tracker th:nth-child(3),
+#injury-tracker td:nth-child(3) {
+    display: table-cell;
+}

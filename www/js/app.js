@@ -48,7 +48,7 @@ var injuries = {
     init: function(year) {
         if ( year == null ) year = 2018;
         // get_json takes three params: filepath, the object that's calling it, and a callback.
-        utils.get_json('output/yankeed-injured-list-' + year + '.json?' + utils.rando(), injuries, injuries.on_load);
+        utils.get_json('output/yankees-injured-list-' + year + '.json?' + utils.rando(), injuries, injuries.on_load);
     }
 }
 
